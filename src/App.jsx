@@ -10,5 +10,4 @@ function Apple(){
     </div>
   )
 }
-
 export default Apple
