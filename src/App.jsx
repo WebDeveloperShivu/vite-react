@@ -1,11 +1,12 @@
-import Header from "./Header"
-import User from "./User"
+import { useState } from "react"
+
 function Apple(){
+  const [counter,setCounter]=useState(0)
   return (
     <div>
-      <Header/>
-      <User/>
-    <h1>This is my First function</h1>
+      <h1>Counter Value : {counter}</h1>
+      <button onClick={()=>setCounter(counter+1)}>Incress Value</button>
+      <button onClick={()=>setCounter(counter-1)}>Decress Value</button>
     </div>
   )
 }
